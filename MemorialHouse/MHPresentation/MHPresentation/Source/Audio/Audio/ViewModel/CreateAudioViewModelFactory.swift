@@ -1,7 +1,7 @@
-import MHFoundation
+import Foundation
 import MHDomain
 
-public struct CreateAudioViewModelFactory {
+public struct CreateAudioViewModelFactory: Sendable {
     private let temporaryStoreMediaUseCase: TemporaryStoreMediaUseCase
     
     public init(temporaryStoreMediaUseCase: TemporaryStoreMediaUseCase) {
